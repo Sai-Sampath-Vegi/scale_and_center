@@ -26,11 +26,11 @@ function draw() {
 	const innerRectangleWidth = outerRectangleWidth * innerRectangleRelativeWidth;
 	const innerRectangleHeight = outerRectangleHeight * innerRectangleRelativeHeight;
 
-	const outerX = geometry.calcOffSet(windowWidth, outerRectangleWidth);
-	const outerY = geometry.calcOffSet(windowHeight, outerRectangleHeight);
+	const outerX = geometry.calcOffset(windowWidth, outerRectangleWidth);
+	const outerY = geometry.calcOffset(windowHeight, outerRectangleHeight);
 
-	const innerX = outerX + geometry.calcOffSet(outerRectangleWidth, innerRectangleWidth);
-	const innerY = outerY + geometry.calcOffSet(outerRectangleHeight, innerRectangleHeight);
+	const innerX = outerX + geometry.calcOffset(outerRectangleWidth, innerRectangleWidth);
+	const innerY = outerY + geometry.calcOffset(outerRectangleHeight, innerRectangleHeight);
 
 	r.BeginDrawing();
 
